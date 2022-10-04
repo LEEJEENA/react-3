@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './style.css'
-import 'bootstrap/dist/css/bootstrap.css';
+
 
 function Form ({title, content, onChange, onCreate})  {
     return (<div>

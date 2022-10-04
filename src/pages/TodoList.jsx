@@ -5,7 +5,7 @@ import Header from '../components/header/Header'
 import List from '../components/list/List'
 import Layout from '../components/layout/Layout'
 
-import 'bootstrap/dist/css/bootstrap.css'
+
 
 
 function TodoList() {
