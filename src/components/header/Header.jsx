@@ -3,7 +3,7 @@ import './style.css'
 
 
 const Header =() => {
-    return (<div>
+    return (<div className="container">
                 <div className="Form1">My Todo List</div>
                 <div className="Form2">React</div>
              </div>)

@@ -4,15 +4,15 @@ import './style.css'
 
 
 function Form ({title, content, onChange, onCreate})  {
-    return (<div>
-                <div class="alert alert-secondary" role="alert">
+    return (<div className='add-form'>
+                
                     <div >
                         <label className="form-label">제목</label>
-                        <input className="form-input" type="text" name="title" onChange={onChange} value={title}/>
+                        <input className="add-input" type="text" name="title" onChange={onChange} value={title}/>
                         <label className="form-label">내용</label>
-                        <input className="form-input" type="text" name="content" onChange={onChange} value={content}/>   
+                        <input className="add-input" type="text" name="content" onChange={onChange} value={content}/>   
                         <button type="button" className="button1" class="btn btn-danger" onClick={onCreate}>추가하기</button>                              
-                    </div>      
+                   
                     
                     
                     </div>

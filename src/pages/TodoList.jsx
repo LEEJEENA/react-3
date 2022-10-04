@@ -79,7 +79,7 @@ function TodoList() {
 
   return (<div>
            <Layout>
-              <Header/><br/>
+              <Header/>
               <Form  title={title}
                       content={content}
                       onChange={onChange}
