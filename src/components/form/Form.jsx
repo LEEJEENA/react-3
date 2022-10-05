@@ -11,7 +11,7 @@ function Form ({title, content, onChange, onCreate})  {
                         <input className="add-input" type="text" name="title" onChange={onChange} value={title}/>
                         <label className="form-label">내용</label>
                         <input className="add-input" type="text" name="content" onChange={onChange} value={content}/>   
-                        <button type="button" className="button1" class="btn btn-danger" onClick={onCreate}>추가하기</button>                              
+                        <button className="button1" onClick={onCreate}>추가하기</button>                              
                    
                     
                     

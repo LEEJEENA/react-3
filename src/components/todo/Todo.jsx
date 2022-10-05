@@ -1,19 +1,18 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import './style.css'
 
 function Todo({ todo, onRemove, onClickButton}) {
 
   
   return (
-    <div className='Todobox'>
+    <div className='todo-container'>
       <div className="Todo-b">
-        <b >{todo.title}</b>
+        <h2>{todo.title}</h2>
         <div>{todo.content}</div>
       </div>
-      <div className="Todo-button">
-        <button type="button" class="btn btn-outline-danger" onClick={() => onRemove(todo.id)}>삭제하기</button>
-        {todo.isdone===true? <button type="button" class="btn btn-outline-success" onClick={() =>onClickButton(todo.id)}>완료</button> : <button type="button" class="btn btn-outline-success" onClick={() =>onClickButton(todo.id)}>취소</button>}
+      <div className="button-set">
+        <button className="todo-delete-button" onClick={() => onRemove(todo.id)}>삭제하기</button>
+        {todo.isdone===true? <button className="todo-complete-button" onClick={() =>onClickButton(todo.id)}>완료</button> : <button className="todo-complete-button" onClick={() =>onClickButton(todo.id)}>취소</button>}
       </div>
     
 
